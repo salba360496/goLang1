@@ -2,6 +2,24 @@ package main
 
 import "fmt"
 
-func main() {
+func double(x int)int  {
+	return x + x
+}
 
+func add(lhs ,rhs int) int {
+	return lhs+rhs
+}
+
+func greet()  {
+	fmt.Println("Hello from greet function !")
+}
+func main() {
+greet()
+dozen:=double(6)
+fmt.Println("The dozen is",dozen)
+bakersDozen := add(dozen,1)
+fmt.Println("The bakers dozen is",bakersDozen)
+
+anotherBakersDozen := add(double(6),1)
+fmt.Println("The another bakers dozen is",anotherBakersDozen)
 }

@@ -19,6 +19,34 @@ package main
 
 import "fmt"
 
-func main() {
+func greeting(name string) {
+	fmt.Println("Hello", name, "welcome to the tutorial of golang!")
+}
 
+// func fullName(firstName ,lastName string)(string,string){
+// 	return firstName,lastName
+// }
+
+func firstName(firstName string) string {
+	return firstName
+}
+
+func add(a, b, c int) int {
+	return a + b + c
+}
+
+func oneNumberReturn() int {
+	return 2
+}
+
+func twoNumberReturn() (int, int) {
+	return 2, 3
+}
+
+func main() {
+	greeting("Salman")
+	fmt.Println("Hi there", firstName("Salman"))
+	fmt.Println("Addition of three numbers", add(2, 3, 4))
+	x, y := twoNumberReturn()
+	fmt.Println(add(oneNumberReturn(), x, y))
 }

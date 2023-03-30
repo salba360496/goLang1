@@ -9,4 +9,19 @@ func average(a, b, c int) float32 {
 
 func main() {
 
+	quiz1, quiz2, quiz3 := 9, 7, 8
+
+	if quiz1 > quiz2 {
+		fmt.Println("Quiz1 is greater then quiz2")
+	} else if quiz1 < quiz2 {
+		fmt.Println("Quiz1 is less then quiz2")
+	} else {
+		fmt.Println("Quiz1 is equal to quiz2")
+	}
+
+	if average(quiz1, quiz2, quiz3) > 7 {
+		fmt.Println("Scores Acceptable")
+	} else {
+		fmt.Println("Scores are not acceptable")
+	}
 }
